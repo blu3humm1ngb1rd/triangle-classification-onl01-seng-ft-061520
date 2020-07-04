@@ -18,12 +18,12 @@ class Triangle
       raise TriangleError
     else 
       if 
-      @side_1 == @side_2 && @side_2 == @side_3
+      (@side_1 == @side_2) && (@side_2 == @side_3)
       :equilateral 
-    elsif @side_3 != @side_2 || @side_3 != @side_1 || @side_1 != @side_2
+    elsif (@side_3 != @side_2) || (@side_3 != @side_1 ) || (@side_1 != @side_2)
       :scalene
      
-    elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_3 == @side_1
+    elsif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_3 == @side_1)
       :isosceles
     
     end 
