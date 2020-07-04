@@ -29,7 +29,9 @@ class Triangle
     end 
 
    #@side_1.is_a? Integer 
-  
+  class TriangleError < StandardError
+    # triangle error code
+  end
 end
 
   class TriangleError < StandardError
